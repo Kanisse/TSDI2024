@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Formulaire pour générer un tableau</h1>
 <form  method="post">
     <input type="number" name="nbrl">
     <input type="number" name="nbrcol">
