@@ -6,20 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> bienvenue</h1>
 
-
-<form method="post">
-    <input type ="number" name="number1">
-    <input type ="number" name="number2">
-    <input type="submit" name="OK" >
+<form action="traitement.php" method="post">
+    <input placeholder="donner moi votre nom" name="nom" type="text">
+    <input type="submit" value="ok" name="Valider">
 </form>
 
-<?php
-if(isset($_POST['OK'])){
-    echo "la somme égale à ". $_POST['number1'] + $_POST['number2'];
-}
+<a href="produits.php">visitez notre site</a>
+<?php $mdp = md5("admin"); 
+echo '<a href="traitement.php?nom=haddari&mdp='.$mdp.'">afficher un message</a>';
+header("location: produits.php");
 ?>
+<a href="http://imbt.ma">cliquez ici</a>
 
 </body>
 </html>
