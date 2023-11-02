@@ -14,7 +14,7 @@
 
 <a href="produits.php">visitez notre site</a>
 <?php $mdp = md5("admin"); 
-echo '<a href="traitement.php?nom=haddari&mdp='.$mdp.'">afficher un message</a>';
+echo '<a href="traitement.php?nom=baraka&prenom=sara&mdp='.$mdp.'">afficher un message</a>';
 header("location: produits.php");
 ?>
 <a href="http://imbt.ma">cliquez ici</a>
